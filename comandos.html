@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Configuração inicial</title>
+</head>
+
+<body>
+
+<div>
+    <h1>Comandos</h1>
+    <a href="index.html">Início</a>
+</div>
+
+    <div class="container">
+        <div class="typewriter">
+        
+        
+        <h4>1. Verifica se o git está instalado na máquina</h1>
+        <pre><code>$ git</code></pre>
+        
+        <h4>2. Configura identificação</h1>
+        <pre><code>$ git config --global user.name "Seu nome"</code></pre>
+        <pre><code>$ git config --global user.mail "seu_email_do_github@exemplo.com.br"</code></pre>
+        
+        <h4>3. Verifica configurações atuais</h1>
+        <pre><code>$ git config --list</code></pre>
+        
+        <h4>4.a. Gerar chave SSH para o Github (algoritmo Ed25519)</h1>
+        <pre><code>$ ssh-keygen -t ed25519 -C "seu_email_do_github@exemplo.com.br"</code></pre>
+        
+        <h4>4.b. Gerar chave SSH para o Github (sistema legado)</h1>
+        <pre><code>$ ssh-keygen -t rsa -b 4096 -C "seu_email_do_github@exemplo.com.br"</code></pre>
+        
+        <h4>5. Local padrão da chave SSH no Windows</h1>
+        <pre><code>/c/Users/seu_usuario/.ssh/id_rsa.pub</code></pre>
+        
+        <h4>6. Registrar chave SSH no Github</h1>
+        <pre><code>acessar https://github.com/settings/ssh/new</code></pre>
+        <pre><code>digitar algum nome para identificar o computador em "Title"</code></pre>
+        <pre><code>copiar conteúdo do arquivo id_rsa.pub para campo "Key"</code></pre>
+        <pre><code>clicar em "Add SSH key"</code></pre>
+        
+        </div>
+    </div>
+
+</body>
+
+</html>

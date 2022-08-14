@@ -1,0 +1,56 @@
+:root {
+    --main-color:rgb(111, 230, 156);
+    --background-color: rgb(0, 22, 10);
+    --secondary-color:#06c;
+}
+
+body {
+    background-color: rgb(7, 7, 7);
+    font-family: Calibri;
+    color: var(--main-color);
+  }
+
+  h4 {
+    color: #6fe69c;
+    font-weight: bold;
+  }
+  p {
+   color: #6fe69c;
+  }
+
+  pre code {
+    background-color: var(--background-color);
+    /*color: rgb(111, 230, 156);*/
+    border: 1px solid var(--main-color);
+    display: block;
+    padding: 5px;
+    max-width: min-content;
+  }
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter code{
+
+    overflow: hidden;
+    border-right: .70em solid rgb(111, 230, 156);
+    white-space: nowrap;
+
+    width: min-content;
+    animation: typing 3.0s steps(60) forwards;
+  }
+
+  .container {
+    display: inline-block;
+
+  }
+  
+/* The typing effect */
+  @keyframes typing {
+    from { width: 0}
+    to { width: 100%}
+  }
+  
+/* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
