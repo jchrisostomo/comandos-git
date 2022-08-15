@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Teoria Java</title>
+</head>
+
+<body>
+    <div>
+        <h1>Teoria Java</h1>
+        <a href="index.html">Início</a>
+    </div>
+    
+    <div class="container">
+        <div class="typewriter">
+            <h4>1. Encapsulamento</h1>
+            <pre><code>Atributos da classe são privados e são modificados e acessados através de métodos.</code></pre>
+            <h4>2. Construtor</h1>
+            <pre><code>Um construtor em Java é um método especial usado para inicializar objetos. O construtor é chamado quando um objeto de uma classe é criado. Ele pode ser usado para definir valores iniciais para atributos de objeto.</code></pre>
+        </div>
+    </div>
+
+    <pre><code>package boardgame;
+
+        public class Position {
+            private int row;
+            private int column;
+        
+            public Position(int row, int column) {
+                this.row = row;
+                this.column = column;
+            }
+        
+            public int getRow() {
+                return row;
+            }
+        
+            public void setRow(int row) {
+                this.row = row;
+            }
+        
+            public int getColumn() {
+                return column;
+            }
+        
+            public void setColumn(int column) {
+                this.column = column;
+            }
+        
+            @Override
+            public String toString() {
+                return row + ", " + column;
+            }
+        }
+    </code></pre>
+
+</body>
+
+</html>

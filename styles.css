@@ -32,7 +32,7 @@ body {
 
     overflow: hidden;
     border-right: .70em solid rgb(111, 230, 156);
-    white-space: nowrap;
+    /*white-space: nowrap;*/
 
     width: min-content;
     animation: typing 3.0s steps(60) forwards;
